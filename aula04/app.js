@@ -20,7 +20,7 @@ btnEnviar.addEventListener("click", function (event){
     let email = inputEmail.value
     let assunto = inputAssunto.value 
     let mensagem = inputMensagem.value
-    let cadastro = cadastro.value
+    
 
     if(nome === "" || email === "" || assunto === "" || mensagem === ""){
         mensagemErro.textContent = "Preencha todos os campos"
@@ -38,6 +38,6 @@ btnEnviar.addEventListener("click", function (event){
     <h3> Assunto: ${assunto} </h3>
     <h3> Mensagem: ${mensagem} </h3>
     `
-
+    cadastro.append(cardusuario)
     form.reset()
 })
